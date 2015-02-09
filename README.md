@@ -5,7 +5,7 @@ The XLSXParser can parsing **Microsoft Excel** and **Google Spreadsheet**.
 
 ## Installation
 ```
-npm install xlsx-parser
+npm install --save xlsx-parser
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ example sheet.xlsx
 | 4 | cc1 | mouse | 3 | run |
 Sheet1
 
-```
+```javascript
 var xlsxParser = require('xlsx-parser');
 var opts = { sheets: [ 1 ] };
 elsxPaser.excel.parse('./sheet.xlsx', opts, function(err, result) {
@@ -63,7 +63,7 @@ example spreadsheet
 | 4 | cc1 | mouse | 3 | run |
 Sheet1
 
-```
+```javascript
 var xlsxParser = require('xlsx-parser');
 
 // setup
@@ -110,7 +110,7 @@ elsxPaser.spreadsheet.parse(SPREADSHEET_KEY, opts, function(err, result) {
 ```
 
 ## Contribution
-1. Fork it ( https://github.com/iyu/xlsx-parser/fork )
+1. Fork it ( [https://github.com/iyu/xlsx-parser/fork](https://github.com/iyu/xlsx-parser/fork) )
 2. Create a feature branch
 3. Commit your changes
 4. Rebase your local changes against the master branch
